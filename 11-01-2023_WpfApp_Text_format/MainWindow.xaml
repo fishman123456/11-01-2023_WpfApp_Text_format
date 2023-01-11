@@ -14,23 +14,17 @@
                 <Button Width="50">italic</Button>
                 <Button Width="100">Underline</Button>
                 <Button Width="50">Clear</Button>
-            </ToolBar>
-
-            <ToolBar >
-                <Button>Front Size:</Button>
-                <ComboBox Name="phonesList" Height="30" VerticalAlignment="Top">
-                    <TextBlock>2</TextBlock>
-                    <TextBlock>4</TextBlock>
-                    <TextBlock>6</TextBlock>
-                    <TextBlock>8</TextBlock>
-                    <TextBlock>10</TextBlock>
-
-                </ComboBox>
-                
-
-            </ToolBar>
-            
-        </ToolBarTray>
+                </ToolBar>
+                    <ToolBar>
+                        <Button>Front Size:</Button>
+                    <ComboBox Name="phonesList" Height="30" VerticalAlignment="Top">
+                        <TextBlock>2</TextBlock>
+                        <TextBlock>4</TextBlock>
+                        <TextBlock>6</TextBlock>
+                        <TextBlock>8</TextBlock>
+                        <TextBlock>10</TextBlock>
+                    </ComboBox>
+                </ToolBar>
+       </ToolBarTray>
     </DockPanel>
-
 </Window>
