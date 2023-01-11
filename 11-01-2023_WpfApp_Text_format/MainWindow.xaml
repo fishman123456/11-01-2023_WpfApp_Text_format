@@ -18,9 +18,16 @@
 
             <ToolBar >
                 <Button>Front Size:</Button>
-                <ComboBoxItem>
-                    list
-                </ComboBoxItem>
+                <ComboBox Name="phonesList" Height="30" VerticalAlignment="Top">
+                    <TextBlock>2</TextBlock>
+                    <TextBlock>4</TextBlock>
+                    <TextBlock>6</TextBlock>
+                    <TextBlock>8</TextBlock>
+                    <TextBlock>10</TextBlock>
+
+                </ComboBox>
+                
+
             </ToolBar>
             
         </ToolBarTray>
