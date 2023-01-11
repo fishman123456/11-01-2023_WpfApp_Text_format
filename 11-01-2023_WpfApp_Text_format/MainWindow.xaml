@@ -8,18 +8,22 @@
         Title="MainWindow" Height="450" Width="800">
 
     <DockPanel LastChildFill="False">
-        <ToolBar Band="1" BandIndex="1" DockPanel.Dock="Top">
-            <Button Width="50">Bold</Button>
-            <Button Width="50">italic</Button>
-            <Button Width="100">Underline</Button>
-            <Button Width="50">Clear</Button>
-        </ToolBar>
-        <ToolBar Band="1" BandIndex="1" DockPanel.Dock="Top">
-        <Separator/>
-            <Button>Front Size:</Button>
-            <List></List>
-        </ToolBar>
+        <ToolBarTray  DockPanel.Dock="Top">
+            <ToolBar>
+                <Button >Bold</Button>
+                <Button Width="50">italic</Button>
+                <Button Width="100">Underline</Button>
+                <Button Width="50">Clear</Button>
+            </ToolBar>
 
+            <ToolBar >
+                <Button>Front Size:</Button>
+                <ComboBoxItem>
+                    list
+                </ComboBoxItem>
+            </ToolBar>
+            
+        </ToolBarTray>
     </DockPanel>
 
 </Window>

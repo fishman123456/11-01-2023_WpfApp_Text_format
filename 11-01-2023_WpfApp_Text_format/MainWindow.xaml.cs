@@ -23,6 +23,9 @@ namespace _11_01_2023_WpfApp_Text_format
         public MainWindow()
         {
             InitializeComponent();
+            List<string> list = new List<string>();
         }
+       
+
     }
 }
