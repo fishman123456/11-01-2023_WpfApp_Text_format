@@ -23,9 +23,12 @@ namespace _11_01_2023_WpfApp_Text_format
         public MainWindow()
         {
             InitializeComponent();
-            List<string> list = new List<string>();
+            for_Toolbar_();
         }
-       
 
+        private void for_Toolbar_()
+        {
+            for_Toolbar();
+        }
     }
 }
