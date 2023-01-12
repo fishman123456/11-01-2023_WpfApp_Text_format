@@ -5,26 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_11_01_2023_WpfApp_Text_format"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Мои окна" FontSize="16" Height="557" Width="800" WindowStartupLocation="CenterScreen">
 
     <DockPanel LastChildFill="False">
         <ToolBarTray  DockPanel.Dock="Top">
             <ToolBar>
-                <Button >Bold</Button>
-                <Button Width="50">italic</Button>
-                <Button Width="100">Underline</Button>
-                <Button Width="50">Clear</Button>
+                <Button Click="Button_Click_1"  >Bold</Button>
+                <Button Width="50" Click="Button_Click_2">italic</Button>
+                <Button Width="100" Click="Button_Click_3">Underline</Button>
+                <Button Width="50" Click="Button_Click">Clear</Button>
                 </ToolBar>
                     <ToolBar>
                         <Button>Front Size:</Button>
-                    <ComboBox x:Name="font_size" Height="30" VerticalAlignment="Top">
-                        <TextBlock>2</TextBlock>
-                        <TextBlock>4</TextBlock>
-                        <TextBlock>6</TextBlock>
-                        <TextBlock>8</TextBlock>
-                        <TextBlock>10</TextBlock>
+                    <ComboBox x:Name="font_size" Width="50" Height="30" VerticalAlignment="Top" Loaded="font_size_Loaded" SelectionChanged="font_size_SelectionChanged">
+                       
                     </ComboBox>
                 </ToolBar>
        </ToolBarTray>
+        <TextBox Name="TextBox1" TextWrapping="Wrap"  DockPanel.Dock="Bottom" Height="400" Cursor="IBeam" ToolTip="Введите текст" TextChanged="TextBox1_TextChanged" Text="Проверка"/>
     </DockPanel>
 </Window>
